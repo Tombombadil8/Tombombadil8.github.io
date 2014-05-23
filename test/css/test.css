@@ -1,0 +1,40 @@
+body{
+	font-size: 25px;
+}
+
+p{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	font-size: inherit;
+	background-color: blue;
+	text-align: center;
+	color: white;
+	border-radius: 4px;
+	position: relative;
+	margin: 0 auto;
+}
+
+p:before, p:after{
+	display: block;
+	width: 200px;
+	height: 50px;
+	border-radius: 4px;
+	position: absolute;
+	top: 0;
+	
+}
+
+p:before{
+	content: "1 fish";
+	left:-210px;
+	top:0;
+	background-color: red;
+}
+p:after{
+	content:"3";
+	right:-210px;
+	top:0;
+	background-color: green;
+
+}
